@@ -1,10 +1,6 @@
-#= require "_helper"
+require.config paths:
+	moment: "/components/moment/moment"
+	jquery: "http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min"
 
-# Add scripts to load to this array. These can be loaded remotely like jquery
-# is below, or can use file paths, like '/components/jquery/jquery.min.js'
-js = ["http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"]
-
-# this will fire once the required scripts have been loaded
-require js, ->
-  $ ->
-    console.log 'jquery loaded, dom ready <-- via assets/js/main.coffee'
+define ["moment", "jquery"], (moment, $) ->
+	return
