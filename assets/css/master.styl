@@ -5,7 +5,7 @@ lucidia-grande = "Lucida Grande", Tahoma, Verdana, Arial, sans-serif
 monospace = unquote("'Bitstream Vera Sans Mono', Consolas, Courier, monospace")
 verdana = Verdana, Geneva, sans-serif
 font-stack = helvetica-neue
-font-size = 12
+font-size = 16
 font-color = #555
 red = #B44326
 orange = #F2A34F
@@ -16,9 +16,46 @@ blue = #00a6fc
 purple = #8E48C2
 white = #fff
 black = #272727
+grey = #333333
 vendors = webkit moz o ms official
 
-colorchoice = #d33534
+colorchoice = #003F87
 dark-color = colorchoice
 default-color = lighten(colorchoice, 30%)
-light-color = lighten(colorchoice, 50%)
+light-color = lighten(colorchoice, 70%)
+
+body
+	background-color default-color
+	color light-color
+
+p
+	width (600px)
+
+.step
+	none
+
+#hhsnopek, #java-exploit, #shiva-client
+	border 3px solid default-color
+	border-radius 25px
+
+#hhsnopek
+	width 1000px
+	height 565px
+
+#shiva-client
+	height 450px
+	width 800px
+	border-radius 0
+
+#family
+	width auto
+
+h1
+	color dark-color
+	font-size 64px
+
+.info
+	font-size 32px
+
+ul
+	list-style none
